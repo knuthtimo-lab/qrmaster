@@ -189,15 +189,16 @@ export async function trackScan(qrId: string, request: Request) {
 
   // Check if this is a unique scan (same IP hash within 24 hours)
   const dayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
-  const existingScan = await db.qRScan.findFirst({
+  const existingScans = await db.qRScan.findMany({
     where: {
       qrId,
       ipHash,
       ts: { gte: dayAgo },
     },
+    take: 1,
   });
 
-  const isUnique = !existingScan;
+  const isUnique = existingScans.length === 0;
 
   const scanData = {
     qrId,
