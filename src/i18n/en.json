@@ -1,0 +1,308 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "login": "Login",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "badge": "🚀 The Internet's Favorite QR Code Creator",
+    "title": "Create Custom QR Codes in Seconds",
+    "subtitle": "Generate static and dynamic QR codes with advanced tracking, professional templates, and seamless integrations.",
+    "features": [
+      "No credit card required to start",
+      "Create QR codes free forever",
+      "Advanced tracking and analytics",
+      "Professional templates included"
+    ],
+    "cta_primary": "Make a QR Code Free",
+    "cta_secondary": "Watch Demo",
+    "engagement_badge": "+47% Engagement Up"
+  },
+  "trust": {
+    "users": "10,000+ Active Users",
+    "codes": "500,000+ QR Codes Created",
+    "scans": "50M+ Scans Tracked",
+    "countries": "120+ Countries"
+  },
+  "industries": {
+    "restaurant": "Restaurant Chain",
+    "tech": "Tech Startup",
+    "realestate": "Real Estate",
+    "events": "Event Agency",
+    "retail": "Retail Store",
+    "healthcare": "Healthcare"
+  },
+  "templates": {
+    "title": "Start with a Template",
+    "restaurant": "Restaurant Menu",
+    "business": "Business Card",
+    "wifi": "Wi-Fi Access",
+    "event": "Event Ticket",
+    "use_template": "Use template →"
+  },
+  "generator": {
+    "title": "Instant QR Code Generator",
+    "url_placeholder": "Enter your URL here...",
+    "foreground": "Foreground",
+    "background": "Background",
+    "corners": "Corners",
+    "size": "Size",
+    "contrast_good": "Good contrast",
+    "download_svg": "Download SVG",
+    "download_png": "Download PNG",
+    "save_track": "Save & Track",
+    "live_preview": "Live Preview",
+    "demo_note": "This is a demo QR code"
+  },
+  "static_vs_dynamic": {
+    "static": {
+      "title": "Static QR Codes",
+      "subtitle": "Always Free",
+      "description": "Perfect for permanent content that never changes",
+      "features": [
+        "Content cannot be edited",
+        "No scan tracking",
+        "Works forever",
+        "No account required"
+      ]
+    },
+    "dynamic": {
+      "title": "Dynamic QR Codes",
+      "subtitle": "Recommended",
+      "description": "Full control with tracking and editing capabilities",
+      "features": [
+        "Edit content anytime",
+        "Advanced analytics",
+        "Custom branding",
+        "Bulk operations"
+      ]
+    }
+  },
+  "features": {
+    "title": "Everything you need to create professional QR codes",
+    "analytics": {
+      "title": "Advanced Analytics",
+      "description": "Track scans, locations, devices, and user behavior with detailed insights."
+    },
+    "customization": {
+      "title": "Full Customization",
+      "description": "Brand your QR codes with custom colors, logos, and styling options."
+    },
+    "bulk": {
+      "title": "Bulk Operations",
+      "description": "Create hundreds of QR codes at once with CSV import and batch processing."
+    },
+    "integrations": {
+      "title": "Integrations",
+      "description": "Connect with Zapier, Airtable, Google Sheets, and more popular tools."
+    },
+    "api": {
+      "title": "Developer API",
+      "description": "Integrate QR code generation into your applications with our REST API."
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Get help when you need it with our dedicated customer support team."
+    }
+  },
+  "pricing": {
+    "title": "Simple, transparent pricing",
+    "subtitle": "Choose the plan that's right for you",
+    "free": {
+      "title": "Free",
+      "price": "€0",
+      "period": "forever",
+      "features": [
+        "5 dynamic QR codes",
+        "Unlimited static QR codes",
+        "Basic analytics",
+        "Standard templates"
+      ]
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "€9",
+      "period": "per month",
+      "badge": "Most Popular",
+      "features": [
+        "Unlimited QR codes",
+        "Advanced analytics",
+        "Custom branding",
+        "Bulk operations",
+        "API access",
+        "Priority support"
+      ]
+    },
+    "business": {
+      "title": "Business",
+      "price": "€49",
+      "period": "per month",
+      "features": [
+        "Everything in Pro",
+        "Team collaboration",
+        "White-label solution",
+        "Advanced integrations",
+        "Custom domains",
+        "Dedicated support"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "account": {
+        "question": "Do I need an account to create QR codes?",
+        "answer": "No account is required for static QR codes. However, dynamic QR codes with tracking and editing capabilities require a free account."
+      },
+      "static_vs_dynamic": {
+        "question": "What's the difference between static and dynamic QR codes?",
+        "answer": "Static QR codes contain fixed content that cannot be changed. Dynamic QR codes can be edited anytime and provide detailed analytics."
+      },
+      "forever": {
+        "question": "Will my QR codes work forever?",
+        "answer": "Static QR codes work forever as the content is embedded directly. Dynamic QR codes work as long as your account is active."
+      },
+      "file_type": {
+        "question": "What file type should I use for printing?",
+        "answer": "For print materials, we recommend SVG format for scalability or high-resolution PNG (300+ DPI) for best quality."
+      },
+      "password": {
+        "question": "Can I password-protect a QR code?",
+        "answer": "Yes, Pro and Business plans include password protection and access control features for your QR codes."
+      },
+      "analytics": {
+        "question": "How do analytics work?",
+        "answer": "We track scans, locations, devices, and referrers while respecting user privacy. No personal data is stored."
+      },
+      "privacy": {
+        "question": "Do you track personal data?",
+        "answer": "We respect privacy and only collect anonymous usage data. IP addresses are hashed and we honor Do Not Track headers."
+      },
+      "bulk": {
+        "question": "Can I bulk-create codes with my own data?",
+        "answer": "Yes, you can upload CSV or Excel files to create multiple QR codes at once with custom data mapping."
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Manage your QR codes and track performance",
+    "stats": {
+      "total_scans": "Total Scans",
+      "active_codes": "Active QR Codes",
+      "conversion_rate": "Conversion Rate"
+    },
+    "recent_codes": "Recent QR Codes",
+    "blog_resources": "Blog & Resources",
+    "menu": {
+      "edit": "Edit",
+      "duplicate": "Duplicate",
+      "pause": "Pause",
+      "delete": "Delete"
+    }
+  },
+  "create": {
+    "title": "Create Dynamic QR Codes",
+    "content": "Content",
+    "type": "QR Code Type",
+    "style": "Style & Branding",
+    "preview": "Live Preview"
+  },
+  "analytics": {
+    "title": "Analytics",
+    "ranges": {
+      "7d": "7 Days",
+      "30d": "30 Days",
+      "90d": "90 Days"
+    },
+    "kpis": {
+      "total_scans": "Total Scans",
+      "avg_scans": "Avg Scans/QR",
+      "mobile_usage": "Mobile Usage %",
+      "top_country": "Top Country"
+    },
+    "charts": {
+      "scans_over_time": "Scans Over Time",
+      "device_types": "Device Types",
+      "top_countries": "Top Countries"
+    },
+    "table": {
+      "qr_code": "QR Code",
+      "type": "Type",
+      "scans": "Scans",
+      "performance": "Performance",
+      "created": "Created",
+      "status": "Status"
+    }
+  },
+  "bulk": {
+    "title": "Bulk Upload",
+    "steps": {
+      "upload": "Upload",
+      "preview": "Preview",
+      "complete": "Complete"
+    },
+    "drag_drop": "Drag & drop your file here, or click to browse",
+    "supported_formats": "Supported formats: .csv, .xls, .xlsx"
+  },
+  "integrations": {
+    "title": "Integrations",
+    "metrics": {
+      "total_codes": "QR Codes Total",
+      "active_integrations": "Active Integrations",
+      "sync_status": "Sync Status",
+      "available_services": "Available Services"
+    },
+    "zapier": {
+      "title": "Zapier",
+      "description": "Automate QR code creation with 5000+ apps",
+      "features": [
+        "Trigger on new QR codes",
+        "Create codes from other apps",
+        "Sync scan data"
+      ]
+    },
+    "airtable": {
+      "title": "Airtable",
+      "description": "Sync QR codes with your Airtable bases",
+      "features": [
+        "Two-way sync",
+        "Custom field mapping",
+        "Real-time updates"
+      ]
+    },
+    "sheets": {
+      "title": "Google Sheets",
+      "description": "Export data to Google Sheets automatically",
+      "features": [
+        "Automated exports",
+        "Custom templates",
+        "Scheduled updates"
+      ]
+    },
+    "activate": "Activate & Configure"
+  },
+  "settings": {
+    "title": "Settings",
+    "tabs": {
+      "profile": "Profile",
+      "billing": "Billing",
+      "team": "Team & Roles",
+      "api": "API Keys",
+      "workspace": "Workspace"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!"
+  }
+}

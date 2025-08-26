@@ -1,0 +1,308 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "login": "Anmelden",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "badge": "🚀 Der beliebteste QR-Code-Generator im Internet",
+    "title": "Erstelle individuelle QR-Codes in Sekunden",
+    "subtitle": "Generiere statische und dynamische QR-Codes mit erweiterten Tracking-Funktionen, professionellen Vorlagen und nahtlosen Integrationen.",
+    "features": [
+      "Keine Kreditkarte zum Starten erforderlich",
+      "QR-Codes für immer kostenlos erstellen",
+      "Erweiterte Verfolgung und Analytik",
+      "Professionelle Vorlagen inklusive"
+    ],
+    "cta_primary": "QR-Code kostenlos erstellen",
+    "cta_secondary": "Demo ansehen",
+    "engagement_badge": "+47% Engagement-Steigerung"
+  },
+  "trust": {
+    "users": "10.000+ Aktive Nutzer",
+    "codes": "500.000+ QR-Codes erstellt",
+    "scans": "50M+ Scans verfolgt",
+    "countries": "120+ Länder"
+  },
+  "industries": {
+    "restaurant": "Restaurant-Kette",
+    "tech": "Tech-Startup",
+    "realestate": "Immobilien",
+    "events": "Event-Agentur",
+    "retail": "Einzelhandel",
+    "healthcare": "Gesundheitswesen"
+  },
+  "templates": {
+    "title": "Mit einer Vorlage beginnen",
+    "restaurant": "Restaurant-Menü",
+    "business": "Visitenkarte",
+    "wifi": "WLAN-Zugang",
+    "event": "Event-Ticket",
+    "use_template": "Vorlage verwenden →"
+  },
+  "generator": {
+    "title": "Sofortiger QR-Code-Generator",
+    "url_placeholder": "Geben Sie hier Ihre URL ein...",
+    "foreground": "Vordergrund",
+    "background": "Hintergrund",
+    "corners": "Ecken",
+    "size": "Größe",
+    "contrast_good": "Guter Kontrast",
+    "download_svg": "SVG herunterladen",
+    "download_png": "PNG herunterladen",
+    "save_track": "Speichern & Verfolgen",
+    "live_preview": "Live-Vorschau",
+    "demo_note": "Dies ist ein Demo-QR-Code"
+  },
+  "static_vs_dynamic": {
+    "static": {
+      "title": "Statische QR-Codes",
+      "subtitle": "Immer kostenlos",
+      "description": "Perfekt für permanente Inhalte, die sich nie ändern",
+      "features": [
+        "Inhalt kann nicht bearbeitet werden",
+        "Keine Scan-Verfolgung",
+        "Funktioniert für immer",
+        "Kein Konto erforderlich"
+      ]
+    },
+    "dynamic": {
+      "title": "Dynamische QR-Codes",
+      "subtitle": "Empfohlen",
+      "description": "Volle Kontrolle mit Tracking- und Bearbeitungsfunktionen",
+      "features": [
+        "Inhalt jederzeit bearbeiten",
+        "Erweiterte Analytik",
+        "Individuelles Branding",
+        "Bulk-Operationen"
+      ]
+    }
+  },
+  "features": {
+    "title": "Alles was Sie brauchen, um professionelle QR-Codes zu erstellen",
+    "analytics": {
+      "title": "Erweiterte Analytik",
+      "description": "Verfolgen Sie Scans, Standorte, Geräte und Nutzerverhalten mit detaillierten Einblicken."
+    },
+    "customization": {
+      "title": "Vollständige Anpassung",
+      "description": "Branden Sie Ihre QR-Codes mit individuellen Farben, Logos und Styling-Optionen."
+    },
+    "bulk": {
+      "title": "Bulk-Operationen",
+      "description": "Erstellen Sie hunderte von QR-Codes auf einmal mit CSV-Import und Batch-Verarbeitung."
+    },
+    "integrations": {
+      "title": "Integrationen",
+      "description": "Verbinden Sie sich mit Zapier, Airtable, Google Sheets und weiteren beliebten Tools."
+    },
+    "api": {
+      "title": "Entwickler-API",
+      "description": "Integrieren Sie QR-Code-Generierung in Ihre Anwendungen mit unserer REST-API."
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Erhalten Sie Hilfe, wenn Sie sie brauchen, mit unserem dedizierten Kundensupport-Team."
+    }
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Wählen Sie den Plan, der zu Ihnen passt",
+    "free": {
+      "title": "Kostenlos",
+      "price": "€0",
+      "period": "für immer",
+      "features": [
+        "5 dynamische QR-Codes",
+        "Unbegrenzte statische QR-Codes",
+        "Basis-Analytik",
+        "Standard-Vorlagen"
+      ]
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "€9",
+      "period": "pro Monat",
+      "badge": "Beliebteste",
+      "features": [
+        "Unbegrenzte QR-Codes",
+        "Erweiterte Analytik",
+        "Individuelles Branding",
+        "Bulk-Operationen",
+        "API-Zugang",
+        "Prioritäts-Support"
+      ]
+    },
+    "business": {
+      "title": "Business",
+      "price": "€49",
+      "period": "pro Monat",
+      "features": [
+        "Alles aus Pro",
+        "Team-Zusammenarbeit",
+        "White-Label-Lösung",
+        "Erweiterte Integrationen",
+        "Individuelle Domains",
+        "Dedizierter Support"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "questions": {
+      "account": {
+        "question": "Benötige ich ein Konto, um QR-Codes zu erstellen?",
+        "answer": "Für statische QR-Codes ist kein Konto erforderlich. Dynamische QR-Codes mit Tracking- und Bearbeitungsfunktionen erfordern jedoch ein kostenloses Konto."
+      },
+      "static_vs_dynamic": {
+        "question": "Was ist der Unterschied zwischen statischen und dynamischen QR-Codes?",
+        "answer": "Statische QR-Codes enthalten feste Inhalte, die nicht geändert werden können. Dynamische QR-Codes können jederzeit bearbeitet werden und bieten detaillierte Analytik."
+      },
+      "forever": {
+        "question": "Funktionieren meine QR-Codes für immer?",
+        "answer": "Statische QR-Codes funktionieren für immer, da der Inhalt direkt eingebettet ist. Dynamische QR-Codes funktionieren, solange Ihr Konto aktiv ist."
+      },
+      "file_type": {
+        "question": "Welchen Dateityp sollte ich zum Drucken verwenden?",
+        "answer": "Für Druckmaterialien empfehlen wir das SVG-Format für Skalierbarkeit oder hochauflösendes PNG (300+ DPI) für beste Qualität."
+      },
+      "password": {
+        "question": "Kann ich einen QR-Code mit einem Passwort schützen?",
+        "answer": "Ja, Pro- und Business-Pläne beinhalten Passwortschutz und Zugriffskontrollfunktionen für Ihre QR-Codes."
+      },
+      "analytics": {
+        "question": "Wie funktioniert die Analytik?",
+        "answer": "Wir verfolgen Scans, Standorte, Geräte und Referrer unter Beachtung der Privatsphäre der Nutzer. Keine persönlichen Daten werden gespeichert."
+      },
+      "privacy": {
+        "question": "Verfolgen Sie persönliche Daten?",
+        "answer": "Wir respektieren die Privatsphäre und sammeln nur anonyme Nutzungsdaten. IP-Adressen werden gehasht und wir respektieren Do-Not-Track-Header."
+      },
+      "bulk": {
+        "question": "Kann ich Codes in großen Mengen mit meinen eigenen Daten erstellen?",
+        "answer": "Ja, Sie können CSV- oder Excel-Dateien hochladen, um mehrere QR-Codes auf einmal mit individueller Datenzuordnung zu erstellen."
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Verwalten Sie Ihre QR-Codes und verfolgen Sie Ihre Performance",
+    "stats": {
+      "total_scans": "Gesamte Scans",
+      "active_codes": "Aktive QR-Codes",
+      "conversion_rate": "Konversionsrate"
+    },
+    "recent_codes": "Aktuelle QR-Codes",
+    "blog_resources": "Blog & Ressourcen",
+    "menu": {
+      "edit": "Bearbeiten",
+      "duplicate": "Duplizieren",
+      "pause": "Pausieren",
+      "delete": "Löschen"
+    }
+  },
+  "create": {
+    "title": "Dynamische QR-Codes erstellen",
+    "content": "Inhalt",
+    "type": "QR-Code-Typ",
+    "style": "Stil & Branding",
+    "preview": "Live-Vorschau"
+  },
+  "analytics": {
+    "title": "Analytik",
+    "ranges": {
+      "7d": "7 Tage",
+      "30d": "30 Tage",
+      "90d": "90 Tage"
+    },
+    "kpis": {
+      "total_scans": "Gesamte Scans",
+      "avg_scans": "Ø Scans/QR",
+      "mobile_usage": "Mobile Nutzung %",
+      "top_country": "Top Land"
+    },
+    "charts": {
+      "scans_over_time": "Scans über Zeit",
+      "device_types": "Gerätetypen",
+      "top_countries": "Top Länder"
+    },
+    "table": {
+      "qr_code": "QR-Code",
+      "type": "Typ",
+      "scans": "Scans",
+      "performance": "Performance",
+      "created": "Erstellt",
+      "status": "Status"
+    }
+  },
+  "bulk": {
+    "title": "Bulk-Upload",
+    "steps": {
+      "upload": "Upload",
+      "preview": "Vorschau",
+      "complete": "Abschließen"
+    },
+    "drag_drop": "Datei hier hinziehen oder klicken zum Durchsuchen",
+    "supported_formats": "Unterstützte Formate: .csv, .xls, .xlsx"
+  },
+  "integrations": {
+    "title": "Integrationen",
+    "metrics": {
+      "total_codes": "QR-Codes Gesamt",
+      "active_integrations": "Aktive Integrationen",
+      "sync_status": "Sync-Status",
+      "available_services": "Verfügbare Services"
+    },
+    "zapier": {
+      "title": "Zapier",
+      "description": "Automatisieren Sie QR-Code-Erstellung mit 5000+ Apps",
+      "features": [
+        "Trigger bei neuen QR-Codes",
+        "Codes aus anderen Apps erstellen",
+        "Scan-Daten synchronisieren"
+      ]
+    },
+    "airtable": {
+      "title": "Airtable",
+      "description": "Synchronisieren Sie QR-Codes mit Ihren Airtable-Basen",
+      "features": [
+        "Bidirektionale Synchronisation",
+        "Individuelle Feldzuordnung",
+        "Echtzeit-Updates"
+      ]
+    },
+    "sheets": {
+      "title": "Google Sheets",
+      "description": "Exportieren Sie Daten automatisch zu Google Sheets",
+      "features": [
+        "Automatisierte Exporte",
+        "Individuelle Vorlagen",
+        "Geplante Updates"
+      ]
+    },
+    "activate": "Aktivieren & Konfigurieren"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "tabs": {
+      "profile": "Profil",
+      "billing": "Abrechnung",
+      "team": "Team & Rollen",
+      "api": "API-Schlüssel",
+      "workspace": "Arbeitsbereich"
+    }
+  },
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolgreich!"
+  }
+}
