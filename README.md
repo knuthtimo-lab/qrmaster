@@ -2,6 +2,59 @@
 
 A production-ready SaaS application for creating and managing QR codes with advanced tracking, analytics, and integrations.
 
+## Prerequisites
+
+Before running this project, make sure you have Node.js installed:
+
+### Windows Installation
+1. Download Node.js from [https://nodejs.org/](https://nodejs.org/)
+2. Install Node.js (LTS version recommended)
+3. Restart your terminal/PowerShell
+4. Verify installation: `node --version` and `npm --version`
+
+### Alternative: Use Node Version Manager (nvm)
+```bash
+# Install nvm-windows
+# Download from: https://github.com/coreybutler/nvm-windows/releases
+
+# Install Node.js
+nvm install 18
+nvm use 18
+```
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Build Issues
+
+If you encounter build issues:
+
+1. **Node.js not found**: Install Node.js as described above
+2. **Prisma generate fails**: Run `npx prisma generate` manually
+3. **TypeScript errors**: Check for type errors in your code
+4. **Vercel deployment fails**: Ensure all environment variables are set
+
+## Environment Variables
+
+Create a `.env.local` file with:
+
+```env
+DATABASE_URL="your-database-url"
+DIRECT_URL="your-direct-database-url"
+NEXTAUTH_SECRET="your-secret"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
 ## Features
 
 - 🎨 **Custom QR Codes** - Create static and dynamic QR codes with full customization
@@ -74,27 +127,6 @@ Use these credentials to test the application:
 
 - **Email**: demo@qrmaster.com
 - **Password**: demo123
-
-## Development
-
-### Local Development (without Docker)
-
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Set up the database:
-```bash
-npx prisma generate
-npx prisma migrate dev
-npx tsx prisma/seed.ts
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
 
 ### Project Structure
 

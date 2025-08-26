@@ -146,8 +146,8 @@ export default function SettingsPage() {
                       }}
                     />
                     <label htmlFor="avatar-upload">
-                      <Button variant="outline" size="sm" asChild>
-                        <span>Change Photo</span>
+                      <Button variant="outline" size="sm">
+                        Change Photo
                       </Button>
                     </label>
                     <p className="text-sm text-gray-500 mt-1">JPG, PNG or GIF. Max 2MB</p>

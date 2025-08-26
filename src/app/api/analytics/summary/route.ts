@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
     // Calculate stats
     const totalScans = qrCodes.reduce((sum, qr) => sum + qr.scans.length, 0);
     const uniqueScans = qrCodes.reduce((sum, qr) => 
-      sum + qr.scans.filter(s => s.isUnique).length, 0
+      sum + qr.scans.filter((s: any) => s.isUnique).length, 0
     );
     
     // Calculate average scans per QR code
@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
       }, {} as Record<string, number>);
     
     const topCountry = Object.entries(countryStats)
-      .sort(([,a], [,b]) => b - a)[0];
+      .sort(([,a], [,b]) => (b as number) - (a as number))[0];
     
     // Time-based stats (last 30 days)
     const thirtyDaysAgo = new Date();
@@ -70,9 +70,9 @@ export async function GET(request: NextRequest) {
       title: qr.title,
       type: qr.type,
       totalScans: qr.scans.length,
-      uniqueScans: qr.scans.filter(s => s.isUnique).length,
+      uniqueScans: qr.scans.filter((s: any) => s.isUnique).length,
       conversion: qr.scans.length > 0 
-        ? Math.round((qr.scans.filter(s => s.isUnique).length / qr.scans.length) * 100)
+        ? Math.round((qr.scans.filter((s: any) => s.isUnique).length / qr.scans.length) * 100)
         : 0,
     })).sort((a, b) => b.totalScans - a.totalScans);
 
@@ -86,18 +86,18 @@ export async function GET(request: NextRequest) {
         mobilePercentage,
         topCountry: topCountry ? topCountry[0] : 'N/A',
         topCountryPercentage: topCountry && totalScans > 0
-          ? Math.round((topCountry[1] / totalScans) * 100)
+          ? Math.round(((topCountry[1] as number) / totalScans) * 100)
           : 0,
       },
       deviceStats,
       countryStats: Object.entries(countryStats)
-        .sort(([,a], [,b]) => b - a)
+        .sort(([,a], [,b]) => (b as number) - (a as number))
         .slice(0, 10)
         .map(([country, count]) => ({
           country,
           count,
           percentage: totalScans > 0 
-            ? Math.round((count / totalScans) * 100) 
+            ? Math.round(((count as number) / totalScans) * 100) 
             : 0,
         })),
       dailyScans,

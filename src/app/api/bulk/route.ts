@@ -72,13 +72,13 @@ export async function POST(request: NextRequest) {
     });
 
     // Batch create
-    const created = await db.qRCode.createMany({
-      data: createData,
-    });
+    const created = await Promise.all(
+      createData.map(data => db.qRCode.create({ data }))
+    );
 
     return NextResponse.json({
       success: true,
-      count: created.count,
+      count: created.length,
     });
   } catch (error) {
     if (error instanceof z.ZodError) {
