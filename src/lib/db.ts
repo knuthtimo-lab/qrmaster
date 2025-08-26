@@ -65,18 +65,6 @@ class MockPrismaClient {
     });
   }
 
-  private saveToLocalStorage() {
-    if (typeof window !== 'undefined') {
-      try {
-        localStorage.setItem('mockUsers', JSON.stringify(Array.from(this.mockData.users.values())));
-        localStorage.setItem('mockQRCodes', JSON.stringify(Array.from(this.mockData.qrCodes.values())));
-        localStorage.setItem('mockScans', JSON.stringify(Array.from(this.mockData.scans.values())));
-      } catch (error) {
-        console.log('Failed to save mock data to localStorage');
-      }
-    }
-  }
-
   get user() {
     return {
       findUnique: async ({ where }: any) => {
@@ -99,7 +87,6 @@ class MockPrismaClient {
           updatedAt: new Date(),
         };
         this.mockData.users.set(user.id, user);
-        this.saveToLocalStorage();
         return user;
       },
       update: async ({ where, data }: any) => {
@@ -107,7 +94,6 @@ class MockPrismaClient {
         if (user) {
           const updatedUser = { ...user, ...data, updatedAt: new Date() };
           this.mockData.users.set(where.id, updatedUser);
-          this.saveToLocalStorage();
           return updatedUser;
         }
         return null;
@@ -139,9 +125,15 @@ class MockPrismaClient {
         return results;
       },
       findUnique: async ({ where }: any) => {
+        if (where.slug) {
+          return Array.from(this.mockData.qrCodes.values()).find(qr => qr.slug === where.slug) || null;
+        }
         return this.mockData.qrCodes.get(where.id) || null;
       },
       findFirst: async ({ where }: any) => {
+        if (where.slug) {
+          return Array.from(this.mockData.qrCodes.values()).find(qr => qr.slug === where.slug) || null;
+        }
         return Array.from(this.mockData.qrCodes.values())
           .find(qr => qr.id === where.id && qr.userId === where.userId) || null;
       },
@@ -153,7 +145,6 @@ class MockPrismaClient {
           updatedAt: new Date(),
         };
         this.mockData.qrCodes.set(qrCode.id, qrCode);
-        this.saveToLocalStorage();
         return qrCode;
       },
       update: async ({ where, data }: any) => {
@@ -161,7 +152,6 @@ class MockPrismaClient {
         if (qrCode) {
           const updatedQR = { ...qrCode, ...data, updatedAt: new Date() };
           this.mockData.qrCodes.set(where.id, updatedQR);
-          this.saveToLocalStorage();
           return updatedQR;
         }
         return null;
@@ -170,7 +160,6 @@ class MockPrismaClient {
         const qrCode = this.mockData.qrCodes.get(where.id);
         if (qrCode) {
           this.mockData.qrCodes.delete(where.id);
-          this.saveToLocalStorage();
           return qrCode;
         }
         return null;
@@ -178,7 +167,7 @@ class MockPrismaClient {
     };
   }
 
-  get scan() {
+  get qRScan() {
     return {
       findMany: async ({ where }: any) => {
         return Array.from(this.mockData.scans.values())
@@ -191,26 +180,25 @@ class MockPrismaClient {
           ts: new Date(),
         };
         this.mockData.scans.set(scan.id, scan);
-        this.saveToLocalStorage();
         return scan;
       },
     };
   }
 
   $connect() {
-    console.log('Mock database connected');
+    return Promise.resolve();
   }
 
   $disconnect() {
-    console.log('Mock database disconnected');
+    return Promise.resolve();
   }
 }
 
-// Try to create the real Prisma client, fallback to mock if it fails
+// Initialize Prisma client
 let prisma: PrismaClient | MockPrismaClient;
 
-// Check if DATABASE_URL is available
 const databaseUrl = process.env.DATABASE_URL;
+
 console.log('DATABASE_URL available:', !!databaseUrl);
 
 if (databaseUrl) {

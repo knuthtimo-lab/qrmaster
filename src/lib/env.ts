@@ -12,6 +12,7 @@ const envSchema = z.object({
   REDIS_URL: z.string().optional(),
   IP_SALT: z.string().default('development-salt-change-in-production'),
   ENABLE_DEMO: z.string().default('false'),
+  NEXT_PUBLIC_APP_URL: z.string().default('http://localhost:3000'),
 });
 
 // During build, we might not have all env vars, so we'll use defaults
@@ -24,5 +25,6 @@ export const env = isBuildTime
       NEXTAUTH_URL: process.env.NEXTAUTH_URL || 'http://localhost:3000',
       NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET || 'development-secret-change-in-production',
       IP_SALT: process.env.IP_SALT || 'development-salt-change-in-production',
+      NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
     })
   : envSchema.parse(process.env);

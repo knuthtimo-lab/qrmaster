@@ -32,10 +32,8 @@ export const QRCodeCard: React.FC<QRCodeCardProps> = ({
   onPause,
   onDelete,
 }) => {
-  // Use a public URL that works on mobile devices
-  const baseUrl = typeof window !== 'undefined' 
-    ? (window.location.hostname === 'localhost' ? 'https://timos-projects-125cbf0d.vercel.app' : window.location.origin)
-    : 'https://timos-projects-125cbf0d.vercel.app';
+  // Use a simple base URL that works in all environments
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://qrmaster.vercel.app';
 
   let qrUrl = '';
 
