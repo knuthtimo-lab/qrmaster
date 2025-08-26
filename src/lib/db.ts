@@ -198,10 +198,16 @@ class MockPrismaClient {
 let prisma: PrismaClient | MockPrismaClient;
 
 const databaseUrl = process.env.DATABASE_URL;
+const isBuildTime = process.env.NEXT_PHASE === 'phase-production-build';
 
 console.log('DATABASE_URL available:', !!databaseUrl);
+console.log('Is build time:', isBuildTime);
 
-if (databaseUrl) {
+// During build time, always use mock database
+if (isBuildTime) {
+  console.log('Build time detected, using mock database');
+  prisma = new MockPrismaClient() as any;
+} else if (databaseUrl) {
   try {
     prisma = globalThis.prisma || new PrismaClient({
       datasources: {

@@ -7,6 +7,8 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "build:windows": "prisma generate; next build",
+    "build:vercel": "prisma generate && next build",
+    "build:debug": "node build-debug.js && npm run build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "prisma generate",

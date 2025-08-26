@@ -2,9 +2,14 @@
   "outputDirectory": ".next",
   "framework": "nextjs",
   "installCommand": "npm install",
+  "buildCommand": "npm run build:vercel",
   "build": {
     "env": {
-      "NODE_OPTIONS": "--max-old-space-size=4096"
+      "NODE_OPTIONS": "--max-old-space-size=4096",
+      "DATABASE_URL": "@database_url",
+      "DIRECT_URL": "@direct_url",
+      "NEXTAUTH_SECRET": "@nextauth_secret",
+      "NEXTAUTH_URL": "@nextauth_url"
     }
   }
 }
