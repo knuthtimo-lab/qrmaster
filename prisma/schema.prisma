@@ -26,6 +26,7 @@ model User {
   accounts      Account[]
   sessions      Session[]
   teamInvitations TeamInvitation[] @relation("TeamInvitations")
+  integrations  Integration[]
   subscription  Subscription?
 }
 
